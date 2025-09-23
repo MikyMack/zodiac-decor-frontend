@@ -24300,8 +24300,9 @@ input[type=checkbox]:checked:disabled + label:before {
 .wpo-contact-pg-section form input:focus,
 .wpo-contact-pg-section form select:focus,
 .wpo-contact-pg-section form textarea:focus {
-  border-color: #000;
-  background: transparent;
+border-color: #4A9FE7;
+    box-shadow: 0 0 0 3px rgba(74, 159, 231, 0.1);
+    transform: translateY(-1px);
 }
 .wpo-contact-pg-section form textarea {
   height: 180px;
@@ -24362,11 +24363,16 @@ input[type=checkbox]:checked:disabled + label:before {
   }
 }
 .wpo-contact-pg-section form .submit-area .theme-btn, .wpo-contact-pg-section form .submit-area .view-cart-btn {
-  border-radius: 0px;
-  font-family: "DM Sans", serif;
-  font-size: 20px;
-  padding: 10px 30px;
-  background: #000;
+  background: linear-gradient(135deg, #4A9FE7, #1a1a1a);
+    border-radius: 25px;
+    padding: 12px 35px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(74, 159, 231, 0.3);
+}
+
+.wpo-contact-pg-section form .submit-area .theme-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(74, 159, 231, 0.4);
 }
 .wpo-contact-pg-section form .submit-area .theme-btn::before, .wpo-contact-pg-section form .submit-area .view-cart-btn::before {
   display: none;
@@ -24409,22 +24415,37 @@ input[type=checkbox]:checked:disabled + label:before {
   }
 }
 .wpo-contact-pg-section .office-info .office-info-item {
-  text-align: center;
-  box-shadow: 0px 5px 15px 0px rgba(62, 65, 159, 0.1);
-  padding: 40px;
+   text-align: center;
+    background: linear-gradient(135deg, rgba(74, 159, 231, 0.1), rgba(255, 255, 255, 0.9));
+    border: 1px solid rgba(74, 159, 231, 0.2);
+    border-radius: 15px;
+    padding: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 25px rgba(74, 159, 231, 0.15);
 }
+
+.wpo-contact-pg-section .office-info .office-info-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 35px rgba(74, 159, 231, 0.25);
+    border-color: #4A9FE7;
+}
+
 .wpo-contact-pg-section .office-info .office-info-item .office-info-icon {
-  width: 85px;
-  height: 85px;
-  background: #f5f5f5;
-  line-height: 85px;
-  text-align: center;
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(135deg, #4A9FE7, #1a1a1a);
+border-radius: 50%;
+   line-height: 75px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(74, 159, 231, 0.3);
+      text-align: center;
   margin: 0 auto;
-  border-radius: 50%;
+
+
 }
 .wpo-contact-pg-section .office-info .office-info-item .office-info-icon .icon .fi:before {
-  font-size: 35px;
-  color: #000;
+  font-size: 30px;
+  color: white;
 }
 .wpo-contact-pg-section .office-info .office-info-item .office-info-text h2 {
   font-size: 30px;
@@ -24443,8 +24464,10 @@ input[type=checkbox]:checked:disabled + label:before {
 }
 .wpo-contact-pg-section .wpo-contact-form-area {
   padding: 50px;
-  background: #fff;
-  box-shadow: 0px 1px 15px 0px rgba(62, 65, 159, 0.1);
+  background: linear-gradient(135deg, rgba(74, 159, 231, 0.05), rgba(255, 255, 255, 0.95));
+    border: 1px solid rgba(74, 159, 231, 0.2);
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(74, 159, 231, 0.15);
   padding-bottom: 0;
   margin-bottom: -125px;
   position: relative;
@@ -26106,6 +26129,9 @@ p {
   background:   #0071CE;
 }
 
+
+
+
 /*****about section ********/
 
 .wpo-about-section .image-1 img,
@@ -26115,3 +26141,51 @@ p {
   object-fit: cover;
   object-position: center;
 }
+
+/***************pagination styles extra********/
+
+.eb_pagination-area {
+    text-align: center;
+}
+
+.eb_pagination-area span,
+.eb_pagination-area a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.eb_pagination-area a:hover {
+    background-color:  #0071CE;
+    color: white;
+    border-color:  #0071CE;
+}
+
+.eb_pagination-area span a {
+    border: none;
+    padding: 10px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+
+@media (max-width: 992px) {
+  .header-right {
+    display: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+    .banner-content, .row {
+
+      text-align: center !important;
+
+    }
+  }
