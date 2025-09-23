@@ -1522,3 +1522,29 @@ a.forEach(item => {
         cursor.classList.remove('hover');
     });
 })
+
+
+/****script for active navlinks ********* */
+
+ document.addEventListener("DOMContentLoaded", function () {
+    // Get current page filename (like "about.html")
+    let currentPage = window.location.pathname.split("/").pop();
+
+    // If no filename (like index.html by default), set it to "index.html"
+    if (currentPage === "") {
+      currentPage = "index.html";
+    }
+
+    // Get all nav links
+    const navLinks = document.querySelectorAll("#navbar .nav-link");
+
+    navLinks.forEach(link => {
+      // Remove any existing 'active'
+      link.classList.remove("active");
+
+      // Compare href filename with current page
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  });

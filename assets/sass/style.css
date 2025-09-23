@@ -189,7 +189,12 @@ html {
 
 :root {
   scroll-behavior: unset;
+   --brand-black: #000000;
+  --brand-blue: #0071CE;
+  --brand-white: #ffffff;
 }
+
+
 
 body {
   font-family: "DM Sans", serif;
@@ -357,7 +362,7 @@ img {
 
 /*** back to top **/
 .back-to-top {
-  background-color:  #233D50;
+  background-color:   #000;
   width: 45px;
   height: 45px;
   line-height: 45px;
@@ -865,7 +870,7 @@ img {
   justify-content: center;
   flex-direction: column;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
 @media (max-width: 767px) {
@@ -884,7 +889,7 @@ img {
   text-align: center;
 }
 .wpo-page-title .wpo-breadcumb-wrap h2 {
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 400;
   line-height: 120px;
   margin-bottom: 0;
@@ -1584,6 +1589,8 @@ img {
   border-radius: 0;
 }
 
+
+
 .sticky-header {
   width: 100%;
   position: fixed;
@@ -1761,7 +1768,7 @@ img {
 }
 .wpo-site-header .header-right {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   z-index: 991;
   position: relative;
   align-items: center;
@@ -3001,6 +3008,7 @@ img {
   border: 1px solid #000;
   color: #000;
   border-radius: 25px;
+   transition: border-color 0.3s ease;
 }
 .wpo-header-style-s3 .header-right .header-search-form-wrapper .fi:before,
 .wpo-header-style-s4 .header-right .header-search-form-wrapper .fi:before,
@@ -4109,7 +4117,7 @@ img {
 /* wpo-hero-slider-s3 */
 .wpo-hero-slider-s3 {
   width: 100%;
-  height: 920px;
+  height: 620px;
   display: flex;
   position: relative;
   z-index: 0;
@@ -4264,7 +4272,7 @@ img {
 }
 .wpo-hero-slider-s3 .slide-content h2 {
   color: #fff;
-  font-size: 120px;
+  font-size: 100px;
   font-weight: 400;
   line-height: 150px;
   margin-bottom: 0;
@@ -4272,7 +4280,7 @@ img {
 }
 @media (max-width: 1459px) {
   .wpo-hero-slider-s3 .slide-content h2 {
-    font-size: 100px;
+    font-size: 80px;
     line-height: 120px;
   }
 }
@@ -7050,7 +7058,7 @@ img {
                         4. wpo-footer
 --------------------------------------------------------------*/
 .wpo-site-footer {
-  background:#2F4E65;
+  background:linear-gradient(135deg, #4A9FE7 15%, #1a1a1a 70%);
   position: relative;
   font-size: 15px;
   overflow: hidden;
@@ -7122,7 +7130,7 @@ img {
   margin: 0;
   position: relative;
   font-family: "DM Sans", serif;
-  font-size: 35px;
+
   font-weight: 400;
 }
 .wpo-site-footer .about-widget .logo {
@@ -7135,7 +7143,7 @@ img {
 }
 .wpo-site-footer .about-widget p {
   color: #cfd8dc;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 30px;
@@ -7240,7 +7248,7 @@ img {
   font-size: 15px;
   margin: 0;
   color: #929292;
-  font-size: 20px;
+ 
   font-weight: 400;
   line-height: 30px;
   text-align: left;
@@ -8038,7 +8046,7 @@ img {
   .wpo-funfact-section-s3 .item h2 span,
   .wpo-funfact-section-s11 .item h2 span,
   .wpo-funfact-section-s14 .item h2 span {
-    font-size: 100px;
+    font-size: 70px;
     letter-spacing: 10px;
   }
 }
@@ -8228,7 +8236,7 @@ img {
 .wpo-testimonial-section .item .content h3,
 .wpo-testimonial-section-s2 .item .content h3 {
   color: #fff;
-  font-size: 50px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 70px;
   margin-top: 50px;
@@ -8238,7 +8246,7 @@ img {
 @media (max-width: 1399px) {
   .wpo-testimonial-section .item .content h3,
   .wpo-testimonial-section-s2 .item .content h3 {
-    font-size: 40px;
+    font-size: 24px;
     line-height: 60px;
   }
 }
@@ -8251,7 +8259,7 @@ img {
 @media (max-width: 757px) {
   .wpo-testimonial-section .item .content h3,
   .wpo-testimonial-section-s2 .item .content h3 {
-    font-size: 35px;
+    font-size: 18px;
     line-height: 45px;
   }
 }
@@ -9522,13 +9530,13 @@ img {
 }
 .wpo-project-section-s3 .title .project-title h2 {
   color: #000;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 400;
   line-height: 120px;
 }
 @media (max-width: 1399px) {
   .wpo-project-section-s3 .title .project-title h2 {
-    font-size: 80px;
+    font-size: 70px;
     line-height: 100px;
   }
 }
@@ -9679,29 +9687,30 @@ img {
 }
 .wpo-project-section-s3 .project-card-s3 .content h2 {
   margin-bottom: 0;
+  
 }
 .wpo-project-section-s3 .project-card-s3 .content h2 a {
   color: #000;
   font-family: "Felidae";
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 400;
   line-height: 50px;
 }
 @media (max-width: 1399px) {
   .wpo-project-section-s3 .project-card-s3 .content h2 a {
-    font-size: 50px;
+    font-size: 30px;
     line-height: 50px;
   }
 }
 @media (max-width: 991px) {
   .wpo-project-section-s3 .project-card-s3 .content h2 a {
-    font-size: 35px;
+    font-size: 25px;
     line-height: 30px;
   }
 }
 @media (max-width: 575px) {
   .wpo-project-section-s3 .project-card-s3 .content h2 a {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .wpo-project-section-s3 .project-card-s3 .content span {
@@ -25990,7 +25999,7 @@ p {
   position: relative;
   width: 45px;
   height: 45px;
-  background:  #233D50;    
+  background:  #000000;    
   color: #fff;
   display: flex;
   justify-content: center;
@@ -26024,7 +26033,7 @@ p {
 /* Tooltip text */
 .edug-contact-icon::before {
   content: attr(data-tooltip);
-  background:  #002025; 
+  background:   #0071CE;
   color: #fff;
   padding: 8px 12px;
   border-radius: 4px;
@@ -26052,7 +26061,7 @@ p {
 
 .edug-contact-icon:hover {
   transform: scale(1.1);
-  background:  #2F4E65;
+  background:   #0071CE;
 }
 
 /* Show tooltip on hover */
@@ -26071,4 +26080,38 @@ p {
 .edug-contact-icon:hover::before,
 .edug-contact-icon:hover::after {
   transition-delay: 0s;
+}
+
+/***navbar extras***********/
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+  color: #0071CE !important; /* brand blue */
+  
+}
+
+
+.wpo-header-style-s3 .theme-btn:hover{
+  border-color:  #0071CE;
+}
+
+.wpo-header-style-s11 .header-right .close-form .theme-btn:hover{
+
+   border-color:  #0071CE;
+}
+
+.back-to-top:hover{
+
+  background:   #0071CE;
+}
+
+/*****about section ********/
+
+.wpo-about-section .image-1 img,
+.wpo-about-section .image-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
