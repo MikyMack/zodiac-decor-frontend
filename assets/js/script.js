@@ -1548,3 +1548,47 @@ a.forEach(item => {
       }
     });
   });
+
+  // Enhanced mobile menu toggle animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            
+            navbarToggler.addEventListener('click', function() {
+                // Animation is handled by CSS, but you can add additional JS here if needed
+            });
+        });
+
+
+        // menu auto close 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarNav');
+    let autoCloseTimer;
+
+    // Function to close the menu
+    function closeMenu() {
+        if (navbarCollapse.classList.contains('show')) {
+            navbarToggler.click();
+        }
+    }
+
+    // Start auto-close timer when menu opens
+    navbarCollapse.addEventListener('shown.bs.collapse', function() {
+        autoCloseTimer = setTimeout(closeMenu, 4000); // Close after 4 seconds
+    });
+
+    // Clear timer when menu closes manually
+    navbarCollapse.addEventListener('hidden.bs.collapse', function() {
+        clearTimeout(autoCloseTimer);
+    });
+
+    // Close menu immediately when clicking nav links
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            setTimeout(closeMenu, 200);
+        });
+    });
+});
